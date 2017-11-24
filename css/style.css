@@ -40,10 +40,88 @@ table {
 /*------------------------------------mycss-----------------------------------*/
 
 @import url(https://fonts.googleapis.com/css?family=VT323);
-
-
 * {
   box-sizing: border-box;
+}
+
+body {
+  background: #383838;
+  color: white;
+  font-family: courier;
+  letter-spacing: 1px;
+  font-size: 20px;
+  -webkit-font-smoothing: none;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.8rem;
+
+}
+
+header {
+  background: #3F8FFF;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  border: 0.2rem outset white;
+}
+
+header h2 {
+  font-size: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.permis {
+  text-align: center;
+}
+
+main h2 {
+  text-align: center;
+  font-weight: bold;
+  padding: 6px 0;
+  border-top: dashed 2px white;
+  border-bottom: solid 2px white;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+footer {
+  border-top: solid 2px white;
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  line-height: 30px;
+}
+
+img {
+  width: 35px;
+  height: 35px;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+ul img {
+  width: 20px;
+  height: 20px;
+}
+
+li {
+  list-style: '- ';
+  list-style-position: inside;
 }
 
 a {
@@ -58,17 +136,6 @@ a:hover {
   color: #05021d;
 }
 
-
-body {
-  background: #383838;
-  color: white;
-  font-family: courier;
-  letter-spacing: 1px;
-  font-size: 20px;
-  -webkit-font-smoothing: none;
-  line-height: 1.2;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -80,16 +147,34 @@ body {
   margin-left: 72%;
 }
 
-footer {
-  border-top: solid 2px white;
-  margin-top: 15px;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px 0;
+
+.img {
+  width: 16%;
+  height: 130px;
 }
 
-.footer-text {
-  font-size: 12px;
+.step li {
+  list-style: none;
+  margin: 4px 50px 8px 10px;
+}
+
+.li-title {
+  list-style: none;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.piece {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.noclick {
+  pointer-events: none;
 }
 
 .frame {
@@ -109,55 +194,6 @@ footer {
   pointer-events: none;
 }
 
-header {
-  background: #3F8FFF;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px 0;
-  border: 0.2rem outset white;
-}
-
-h1 {
-  font-size: 1.8rem;
-}
-
-header h2 {
-  font-size: 20px;
-}
-
-img {
-  width: 35px;
-  height: 35px;
-}
-
-li {
-  list-style: '- ';
-  list-style-position: inside;
-}
-
-.li-title {
-  list-style: none;
-  font-weight: bold;
-  margin-bottom: 5px;
-  text-decoration: underline;
-}
-
-main h2 {
-  text-align: center;
-  font-weight: bold;
-  padding: 6px 0;
-  border-top: dashed 2px white;
-  border-bottom: solid 2px white;
-  font-size: 1.4rem;
-  margin: 1rem 0;
-  text-transform: uppercase;
-}
-
-.noclick {
-  pointer-events: none;
-}
-
 .output {
   background-color: black;
   overflow: scroll;
@@ -168,34 +204,14 @@ main h2 {
   z-index: -1;
 }
 
-p {
-  margin-bottom: 1rem;
-}
-
-span {
-  font-weight: bold;
-}
-
-.step li {
-  list-style: none;
-  margin: 4px 50px 8px 10px;
-}
-
-ul {
-  margin: 10px 0;
-  display: inline-block;
-}
-
-ul img {
-  width: 20px;
-  height: 20px;
+.footer-text {
+  font-size: 13px;
 }
 
 .yellow {
   color:yellow;
 }
 
-/* RESPONSIVE */
 @media screen and (max-width: 700px) {
   #vault-boy {
     display: none;
@@ -206,15 +222,22 @@ ul img {
   }
 
   h1 {
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
   }
 
   header h2 {
-    font-size: 16px;
+    font-size: 19px;
+    margin-top: 10px;
+  }
+
+  img {
+    width: 25px;
+    height: 25px;
+    margin-top:15px;
   }
 
   .footer-text {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
