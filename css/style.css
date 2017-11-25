@@ -237,6 +237,10 @@ a:hover {
     margin-top:15px;
   }
 
+p {
+  text-align: justify;
+}
+
   .footer-text {
     font-size: 9px;
   }
