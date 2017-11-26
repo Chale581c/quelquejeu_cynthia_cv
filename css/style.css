@@ -195,6 +195,8 @@ a:hover {
 }
 
 .output {
+  -webkit-animation: crt-output 10ms infinite;
+  animation: crt-output 10ms infinite;
   background-color: black;
   overflow: scroll;
   position: absolute;
@@ -243,5 +245,24 @@ p {
 
   .footer-text {
     font-size: 9px;
+  }
+}
+
+
+@-webkit-keyframes crt-output {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes crt-output {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
   }
 }
